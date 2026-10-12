@@ -1,0 +1,29 @@
+<!--
+title: Account | YugeSavers
+description: The demo shopper's account in the YugeSavers prototype: Saver Card, food rescued so far and past demo orders.
+page: account
+-->
+      <header class="aisle-sign">
+        <span class="sign-no" aria-hidden="true">{{i:account}}</span>
+        <div class="sign-text">
+          <h1>Account</h1>
+          <p>Sam, demo shopper</p>
+        </div>
+      </header>
+
+      <main>
+        <div class="divider"><h2>Saver Card</h2></div>
+        <section id="saverCard" aria-label="Saver Card"></section>
+
+        <div class="divider"><h2>Rescued so far</h2></div>
+        <section id="tally" class="tally" aria-label="Totals from your demo orders"></section>
+
+        <div class="divider"><h2>Orders</h2></div>
+        <section id="orders" class="orders" aria-label="Demo orders"></section>
+
+        <div class="divider"><h2>This demo</h2></div>
+        <section class="panel">
+          <p>Your basket, your orders and the store's bundles are kept in this browser only. Nothing is sent anywhere.</p>
+          <button class="btn btn-outline" id="resetDemo" type="button">Reset demo data</button>
+        </section>
+      </main>

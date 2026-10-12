@@ -1,0 +1,40 @@
+<!--
+title: YugeSavers: rescue bundles from near-expiry stock
+description: A supermarket app prototype. Staff turn stock that is close to its date into discounted meal bundles with a recipe, and shoppers see them in the app.
+page: home
+-->
+      <header class="aisle-sign aisle-sign-home">
+        <span class="sign-no" aria-hidden="true">YS</span>
+        <div class="sign-text">
+          <h1>YugeSavers</h1>
+          <p id="greeting">Hello, Sam</p>
+        </div>
+        <p class="store-chip">{{i:pin}}Harbour Road store</p>
+      </header>
+
+      <main>
+        <form class="search" action="shop.html" method="get" role="search">
+          <label class="visually-hidden" for="q">Search products</label>
+          <input id="q" name="q" type="search" placeholder="Search the shop" autocomplete="off" enterkeyhint="search">
+          <button type="submit" aria-label="Search">{{i:search}}</button>
+        </form>
+
+        <div class="divider">
+          <h2>Reduced today</h2>
+          <a href="offers.html">All offers</a>
+        </div>
+        <p class="lede">Meal bundles built around food that is close to its date. Each comes with a recipe.</p>
+        <section id="homeBundles" class="bundle-list" aria-label="Rescue bundles"></section>
+        <p class="staff-note" id="staffNote"></p>
+
+        <section class="delivery" aria-label="Delivery">
+          <p id="deliveryMsg">Spend £30.00 more for free delivery</p>
+          <div class="gauge" role="img" aria-label="Progress towards free delivery" id="deliveryGauge"><span></span></div>
+        </section>
+
+        <div class="divider"><h2>Aisles</h2><a href="shop.html">Whole shop</a></div>
+        <nav class="aisles" id="aisles" aria-label="Aisles"></nav>
+
+        <div class="divider"><h2>Your Saver Card</h2></div>
+        <section id="saverCard" aria-label="Saver Card"></section>
+      </main>

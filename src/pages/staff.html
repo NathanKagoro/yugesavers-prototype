@@ -1,0 +1,35 @@
+<!--
+title: Staff handheld | YugeSavers
+description: The back-of-house view of the YugeSavers prototype: near-expiry stock goes in, a priced meal bundle comes out.
+page: staff
+bodyClass: stockroom
+theme: #10160f
+nav: none
+aside: aside-staff
+footer: footer-staff
+-->
+      <header class="hh-status">
+        <span>HR-STOCK</span><span>Harbour Road</span><span id="hhClock">--:--</span>
+      </header>
+
+      <main class="hh">
+        <h1>Near-expiry stock</h1>
+        <p class="hh-hint">Tick the lines to bundle, then generate.</p>
+        <ul class="hh-stock" id="stockList"></ul>
+        <button class="key key-go" id="generate" type="button">{{i:scan}}Generate bundle</button>
+
+        <section id="proposal" class="hh-panel" aria-live="polite" aria-label="Proposed bundle"></section>
+
+        <h2>Live in the app</h2>
+        <ul class="hh-live" id="liveList"></ul>
+
+        <button class="key key-quiet" id="resetDemo" type="button">Reset demo data</button>
+      </main>
+
+      <dialog class="poster-dialog" id="posterDialog" aria-label="Recipe poster">
+        <div class="poster" id="poster"></div>
+        <div class="poster-actions">
+          <button class="key key-go" id="posterPrint" type="button">{{i:print}}Print</button>
+          <button class="key" id="posterClose" type="button">Close</button>
+        </div>
+      </dialog>

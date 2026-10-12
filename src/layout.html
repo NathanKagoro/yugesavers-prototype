@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<meta name="theme-color" content="{{theme}}">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://nathankagoro.github.io/yugesavers-prototype/{{file}}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="https://nathankagoro.github.io/yugesavers-prototype/{{file}}">
+<meta property="og:image" content="https://nathankagoro.github.io/yugesavers-prototype/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A yellow reduced sticker reading YugeSavers rescue bundles, on a supermarket shelf edge.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{title}}">
+<meta name="twitter:description" content="{{description}}">
+<meta name="twitter:image" content="https://nathankagoro.github.io/yugesavers-prototype/assets/og.png">
+<link rel="preload" href="assets/fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/app.css?v={{version}}">
+<script type="module" src="js/app.js?v={{version}}"></script>
+</head>
+<body class="{{bodyClass}}" data-page="{{page}}">
+{{icons}}
+<div class="floor">
+  <aside class="concept" aria-label="About this prototype">
+{{aside}}
+  </aside>
+
+  <div class="device">
+    <div class="device-ear" aria-hidden="true"></div>
+    <div class="screen" id="screen">
+      <p class="demo-strip"><strong>Prototype:</strong> demo data, no real orders</p>
+{{content}}
+      <footer class="way-out">
+        <a class="exit-sign" href="https://nathankagoro.com">{{i:back}}<span>Way out<small>nathankagoro.com</small></span></a>
+        {{footerLinks}}
+      </footer>
+      <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+{{nav}}
+    </div>
+  </div>
+</div>
+<noscript><p class="noscript">This prototype needs JavaScript: the basket and the bundles are worked out in your browser.</p></noscript>
+</body>
+</html>

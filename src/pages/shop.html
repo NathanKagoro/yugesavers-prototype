@@ -1,0 +1,23 @@
+<!--
+title: Shop | YugeSavers
+description: Browse the demo shelves of the YugeSavers prototype: search, filter by aisle and add to a basket that adds up properly.
+page: shop
+-->
+      <header class="aisle-sign">
+        <span class="sign-no" id="aisleNo" aria-hidden="true">All</span>
+        <div class="sign-text">
+          <h1>Shop</h1>
+          <p id="aisleName">Every aisle</p>
+        </div>
+      </header>
+
+      <main>
+        <form class="search" id="shopSearch" role="search">
+          <label class="visually-hidden" for="q">Search products</label>
+          <input id="q" name="q" type="search" placeholder="Search the shop" autocomplete="off" enterkeyhint="search">
+          <button type="submit" aria-label="Search">{{i:search}}</button>
+        </form>
+        <div class="chips" id="catChips" role="group" aria-label="Filter by aisle"></div>
+        <p class="result-count" id="resultCount" role="status" aria-live="polite"></p>
+        <section class="shelves" id="shelves" aria-label="Products"></section>
+      </main>
