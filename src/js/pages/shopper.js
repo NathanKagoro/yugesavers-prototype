@@ -242,7 +242,8 @@ export function basket() {
   let placed = null;
   return (st) => {
     const sum = summary(st);
-    $('basketSub').textContent = sum.items ? `${sum.items} ${sum.items === 1 ? 'item' : 'items'}, ${formatPence(sum.totalPence)}` : 'Nothing here yet';
+    $('basketSub').textContent = sum.items ? `${sum.items} ${sum.items === 1 ? 'item' : 'items'}, ${formatPence(sum.totalPence)}`
+      : placed ? `Demo order ${placed.ref} placed` : 'Nothing here yet';
 
     if (!sum.lines.length) {
       mount($('basketMain'),
