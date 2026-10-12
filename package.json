@@ -1,0 +1,16 @@
+{
+  "name": "yugesavers-prototype",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Supermarket app prototype: staff turn near-expiry stock into discounted meal bundles.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test",
+    "serve": "node scripts/serve.mjs dist 4380 /yugesavers-prototype/",
+    "screenshots": "node scripts/screenshots.mjs"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^23.11.1"
+  }
+}
