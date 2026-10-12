@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YugeSavers - Offers</title>
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/icons.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="offers">
+    <main class="app-shell">
+      <header class="page-header pb-2">
+        <p class="page-subtitle mb-1">Weekly Deals and Loyalty</p>
+        <h1 class="page-title">Offers</h1>
+      </header>
+
+      <button id="couponToggle" class="coupon-fab" type="button">Coupons (3)</button>
+      <section id="couponPopup" class="coupon-popup d-none" aria-live="polite">
+        <div class="coupon-popup-header">
+          <h2 class="h6 mb-0">Coupon Wallet</h2>
+          <button id="couponClose" class="coupon-close" type="button">Close</button>
+        </div>
+        <article class="coupon-card compact">
+          <div class="coupon-meta">
+            <p class="coupon-title">10% off Household Essentials</p>
+            <p class="coupon-sub">Min spend £15 • Expires in 2 days</p>
+          </div>
+          <span class="coupon-pill">Active</span>
+        </article>
+        <article class="coupon-card compact">
+          <div class="coupon-meta">
+            <p class="coupon-title">£2 off Dairy</p>
+            <p class="coupon-sub">Min spend £10 • Clubcard only</p>
+          </div>
+          <span class="coupon-pill">Active</span>
+        </article>
+        <article class="coupon-card compact">
+          <div class="coupon-meta">
+            <p class="coupon-title">Family Bundle Bonus</p>
+            <p class="coupon-sub">Extra 5% off selected meal bundles</p>
+          </div>
+          <span class="coupon-pill">Active</span>
+        </article>
+      </section>
+
+      <div class="section-title mt-2">
+        <h2>On Discount</h2>
+        <a href="recipes.html">Open Hub</a>
+      </div>
+      <p class="small text-secondary px-3 mb-2">AI-generated recipes from near-expiry ingredients, discounted for quick checkout.</p>
+      <section id="offersRescueMeals"></section>
+    </main>
+
+    <nav class="bottom-nav">
+      <ul class="nav nav-justified">
+        <li class="nav-item">
+          <a class="nav-link" data-page="home" href="index.html"><i class="bi bi-house"></i>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-page="shop" href="shop.html"><i class="bi bi-shop-window"></i>Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-page="offers" href="offers.html"><i class="bi bi-tag"></i>Offers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-page="basket" href="basket.html"><i class="bi bi-basket2"></i>Basket</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link dead-link" data-page="account" href="#" aria-disabled="true"><i class="bi bi-person-circle"></i>Account</a>
+        </li>
+      </ul>
+    </nav>
+
+    <script src="data/meals.js"></script>
+    <script src="data/products.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      (function () {
+        var toggle = document.getElementById("couponToggle");
+        var closeBtn = document.getElementById("couponClose");
+        var popup = document.getElementById("couponPopup");
+        if (!toggle || !popup || !closeBtn) {
+          return;
+        }
+        toggle.addEventListener("click", function () {
+          popup.classList.toggle("d-none");
+        });
+        closeBtn.addEventListener("click", function () {
+          popup.classList.add("d-none");
+        });
+      })();
+    </script>
+  </body>
+</html>

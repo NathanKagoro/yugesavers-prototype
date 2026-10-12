@@ -1,0 +1,61 @@
+.bi {
+  display: inline-block;
+  font-style: normal;
+  line-height: 1;
+}
+
+.bi::before {
+  display: inline-block;
+}
+
+.bi-house::before {
+  content: "\2302";
+}
+
+.bi-journal-richtext::before {
+  content: "\2630";
+}
+
+.bi-shop-window::before {
+  content: "\25A6";
+}
+
+.bi-tag::before {
+  content: "\25D0";
+}
+
+.bi-basket2::before {
+  content: "\1F6D2";
+}
+
+.bi-person-circle::before {
+  content: "\25C9";
+}
+
+.bi-clock-history::before {
+  content: "\23F2";
+}
+
+.bi-exclamation-diamond::before {
+  content: "\26A0";
+}
+
+.bi-geo-alt::before {
+  content: "\25CF";
+}
+
+.bi-truck::before {
+  content: "\25B7";
+}
+
+.bi-search::before {
+  content: "\2315";
+}
+
+.bi-lightning-charge::before {
+  content: "\26A1";
+}
+
+.bi-stars::before {
+  content: "\2736";
+}

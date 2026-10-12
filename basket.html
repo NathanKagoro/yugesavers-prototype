@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YugeSavers - Basket</title>
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/icons.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="basket">
+    <main class="app-shell">
+      <header class="page-header">
+        <p class="page-subtitle mb-1">Ready To Checkout</p>
+        <h1 class="page-title">Basket</h1>
+      </header>
+
+      <section class="utility-row px-3 pt-1 pb-2">
+        <span class="utility-chip"><i class="bi bi-stars"></i> Substitutions: Best match</span>
+      </section>
+
+      <section class="summary-box">
+        <h2 class="h5 mb-2">Grocery Items</h2>
+        <div id="groceryBasketList"></div>
+      </section>
+
+      <section class="summary-box">
+        <h2 class="h5 mb-1">Rescue Bundle</h2>
+        <p class="mb-1 fw-semibold" id="basketMealName">Chicken Fajita Night</p>
+        <p class="mb-0 new-price" id="basketMealPrice">£5.99</p>
+      </section>
+
+      <section class="summary-box">
+        <h2 class="h5 mb-2">Order Summary</h2>
+        <div class="d-flex justify-content-between mb-2">
+          <span>Groceries subtotal</span>
+          <strong id="groceriesSubtotal">£0.00</strong>
+        </div>
+        <div class="d-flex justify-content-between mb-2">
+          <span>Rescue bundle</span>
+          <strong id="rescueLine">£5.99</strong>
+        </div>
+        <div class="d-flex justify-content-between mb-2">
+          <span>Delivery</span>
+          <strong id="deliveryFee">£2.50</strong>
+        </div>
+        <div class="d-flex justify-content-between mb-2 text-danger">
+          <span>Total discount</span>
+          <strong id="totalDiscount">£0.00</strong>
+        </div>
+        <div class="d-flex justify-content-between fw-bold">
+          <span>Total</span>
+          <strong id="grandTotal">£0.00</strong>
+        </div>
+      </section>
+
+      <section class="summary-box">
+        <h2 class="h5 mb-2">Rescue Savings Breakdown</h2>
+        <div class="d-flex justify-content-between mb-2"><span>Original value</span><strong id="basketOriginal">£9.50</strong></div>
+        <div class="d-flex justify-content-between mb-0 text-danger"><span>Bundle discount</span><strong id="basketDiscount">£3.51</strong></div>
+      </section>
+
+      <section class="summary-box">
+        <h2 class="h5 mb-2">Sustainability Impact</h2>
+        <p class="mb-0">Food waste prevented <strong>1.2kg</strong></p>
+      </section>
+
+      <button id="checkoutBtn" class="cta-btn">Checkout</button>
+      <p id="checkoutMessage" class="text-center fw-bold text-success d-none"></p>
+    </main>
+
+    <nav class="bottom-nav">
+      <ul class="nav nav-justified">
+        <li class="nav-item">
+          <a class="nav-link" data-page="home" href="index.html"><i class="bi bi-house"></i>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-page="shop" href="shop.html"><i class="bi bi-shop-window"></i>Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-page="offers" href="offers.html"><i class="bi bi-tag"></i>Offers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-page="basket" href="basket.html"><i class="bi bi-basket2"></i>Basket</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link dead-link" data-page="account" href="#" aria-disabled="true"><i class="bi bi-person-circle"></i>Account</a>
+        </li>
+      </ul>
+    </nav>
+
+    <script src="data/meals.js"></script>
+    <script src="data/products.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
