@@ -98,7 +98,7 @@ export function priceBasket({ lines, products, bundles, coupons = [], clipped = 
     toFreePence,
     deliveryProgress: Math.min(100, percentOf(subtotalPence, delivery.freeFromPence)),
     deliveryMessage: free
-      ? 'Free delivery unlocked'
+      ? 'Free delivery on this order'
       : `Spend ${formatPence(toFreePence)} more for free delivery`,
     totalPence: subtotalPence + deliveryPence,
     wasteGrams: sum('wasteGrams'),

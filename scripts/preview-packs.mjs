@@ -1,4 +1,4 @@
-// Dev aid: node scripts/preview-packs.mjs out.html — all pack shots on one page.
+// Dev aid: node scripts/preview-packs.mjs out.html writes all pack shots to one page.
 import { writeFileSync } from 'node:fs';
 import { PRODUCTS } from '../src/js/data/products.js';
 import { packSvg } from '../src/js/lib/pack.js';

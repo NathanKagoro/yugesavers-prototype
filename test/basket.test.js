@@ -67,7 +67,7 @@ test('delivery is free at exactly the threshold and charged one penny below it',
   const exact = price(lines, { delivery: { feePence: 250, freeFromPence: 2990 } });
   assert.equal(exact.deliveryPence, 0);
   assert.equal(exact.toFreePence, 0);
-  assert.equal(exact.deliveryMessage, 'Free delivery unlocked');
+  assert.equal(exact.deliveryMessage, 'Free delivery on this order');
   assert.equal(exact.totalPence, 2990);
   assert.equal(exact.deliveryProgress, 100);
 });
